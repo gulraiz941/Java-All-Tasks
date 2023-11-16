@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Task 1: Sum of Array Elements
+Write a function that takes an array of numbers and returns the sum of all the elements.
+
+const numbers = [1, 2, 3, 4, 5];
+Output: 15 -->
+<!-- <script>
+    function sumArrayElements(arr) {
+  return arr.reduce((sum, current) => sum + current, 0);
+}
+
+const numbers = [1, 2, 3, 4, 5];
+const result = sumArrayElements(numbers);
+console.log(result);
+</script> -->
+<!-- Task 2: Find Even Numbers
+Write a function that takes an array of numbers and returns a new array containing only the even numbers.
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+Output: [2, 4, 6, 8] -->
+<!-- <script>
+function findEvenNumbers(arr) {
+    return arr.filter(number => number % 2 === 0);
+  }
+  
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+  const result = findEvenNumbers(numbers);
+  console.log(result);
+  </script> -->
+  <!-- Task 3: Check Array Equality
+Write a function that takes two arrays and returns true if they are equal (have the same elements in the same order), otherwise returns false.
+
+const array1 = [1, 2, 3];
+const array2 = [1, 2, 3];
+const array3 = [1, 2, 4];
+Output: true -->
+<!-- <script>
+    function areArraysEqual(arr1, arr2) {
+  // Check if the lengths are equal
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+
+  // Check each element for equality
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) {
+      return false;
+    }
+  }
+
+  // If all elements are equal, the arrays are equal
+  return true;
+}
+
+const array1 = [1, 2, 3];
+const array2 = [1, 2, 3];
+const array3 = [1, 2, 4];
+
+console.log(areArraysEqual(array1, array2));
+// Output: true
+
+console.log(areArraysEqual(array1, array3));
+</script> -->
+<!-- Task 4: Merge Arrays and Remove Duplicates
+Write a function that takes two arrays and returns a new array that contains all the elements from both arrays without any duplicates.
+
+const array1 = [1, 2, 3];
+const array2 = [3, 4, 5];
+Output: [1, 2, 3, 4, 5] -->
+<!-- <script>
+    function mergeArraysAndRemoveDuplicates(arr1, arr2) {
+  // Concatenate the arrays and create a Set to automatically remove duplicates
+  const mergedSet = new Set([...arr1, ...arr2]);
+
+  // Convert the Set back to an array
+  const mergedArray = [...mergedSet];
+
+  return mergedArray;
+}
+
+const array1 = [1, 2, 3];
+const array2 = [3, 4, 5];
+const result = mergeArraysAndRemoveDuplicates(array1, array2);
+console.log(result); -->
+<!-- Task 5: Find Common Elements
+Write a function that takes two arrays and returns a new array containing the common elements between the two arrays.
+
+const array1 = [1, 2, 3, 4];
+const array2 = [3, 4, 5, 6];
+Output: [3, 4] -->
+<!-- <script>
+    function findCommonElements(arr1, arr2) {
+  // Create Sets from the input arrays
+  const set1 = new Set(arr1);
+  const set2 = new Set(arr2);
+
+  // Use the filter method on the first set to keep only elements present in both sets
+  const commonElements = [...set1].filter(element => set2.has(element));
+
+  return commonElements;
+}
+
+const array1 = [1, 2, 3, 4];
+const array2 = [3, 4, 5, 6];
+const result = findCommonElements(array1, array2);
+console.log(result);
+</script> -->
+<!-- Task 6: Calculate Average of Numbers
+Write a function that takes an array of numbers and returns the average value.
+
+const numbers = [10, 20, 30, 40, 50];
+Output: 30 -->
+<!-- <script>
+    function calculateAverage(arr) {
+  if (arr.length === 0) {
+    // Handle the case where the array is empty to avoid division by zero
+    return 0;
+  }
+
+  // Use the reduce method to calculate the sum of all elements in the array
+  const sum = arr.reduce((accumulator, current) => accumulator + current, 0);
+
+  // Calculate the average by dividing the sum by the number of elements
+  const average = sum / arr.length;
+
+  return average;
+}
+
+const numbers = [10, 20, 30, 40, 50];
+const result = calculateAverage(numbers);
+console.log(result);
+</script> -->
+  
+
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <body>
+    Task 1:
+     Parsing JSON
+Given a JSON string, parse it into a JavaScript object using JSON.parse()
+
+const jsonString = '{"name": "John", "age": 30, "city": "New York"}';
+// Output: "John"
+// Output: 30
+// Output: "New York" -->
+<!-- <script>
+    const jsonString = '{"name": "John", "age": 30, "city": "New York"}';
+
+// Parse the JSON string into a JavaScript object
+const parsedObject = JSON.parse(jsonString);
+
+// Access the individual properties of the object
+console.log(parsedObject.name);
+// Output: "John"
+
+console.log(parsedObject.age);
+// Output: 30
+
+console.log(parsedObject.city);
+</script> -->
+<!-- Task 2: 
+    Stringifying Objects
+Given a JavaScript object, convert it into a JSON string using JSON.stringify().
+
+const person = { name: "Jane", age: 25, city: "London" };
+// Output: '{"name":"Jane","age":25,"city":"London"}' -->
+<!-- <script>
+    const person = { name: "Jane", age: 25, city: "London" };
+
+// Convert the JavaScript object to a JSON string
+const jsonString = JSON.stringify(person);
+
+console.log(jsonString);
+</script> -->
+<!-- Task 3: 
+    Filtering JSON Array
+Given an array of objects, filter out objects that meet a specific condition.
+
+const products = [ { id: 1, name: "Apple", price: 1.2 }, { id: 2, name: "Banana", price: 0.8 }, { id: 3, name: "Orange", price: 1.0 } ];
+
+// Output: [ { id: 1, name: 'Apple', price: 1.2 }, { id: 3, name: 'Orange', price: 1 } ]  -->
+<!-- <script>
+    const products = [
+  { id: 1, name: "Apple", price: 1.2 },
+  { id: 2, name: "Banana", price: 0.8 },
+  { id: 3, name: "Orange", price: 1.0 }
+];
+
+// Filter out objects with a price greater than or equal to 1.0
+const filteredProducts = products.filter(product => product.price >= 1.0);
+
+console.log(filteredProducts);
+</script> -->
+<!-- Task 4 -->
+<!-- const users = [
+  { id: 1, name: "John", status: "active" },
+  { id: 2, name: "Jane", status: "inactive" },
+  { id: 3, name: "Bob", status: "active" }
+];
+
+// Modify the 'status' property and add 'isActive' property based on the 'status' value
+const modifiedUsers = users.map(user => ({
+  ...user,
+  isActive: user.status === "active"
+}));
+
+console.log(modifiedUsers); -->
+</html>
+</body>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <!--Task 1: Squares of Numbers 
+   Write a function that takes an array of numbers and returns a new array containing the squares of each number. 
+
+const numbers = [1, 2, 3, 4, 5];
+// Output: [1, 4, 9, 16, 25] -->
+    <!-- <script>
+        function squareNumbers(arr) {
+        // Use the map function to apply the square operation to each element in the array
+        const squaredArray = arr.map(number => number * number);
+        return squaredArray;
+      }
+      
+      const numbers = [1, 2, 3, 4, 5];
+      const squaredNumbers = squareNumbers(numbers);
+      
+      console.log(squaredNumbers);
+    </script>  -->
+   <!-- Task 2: Capitalize Names 
+        
+Task 2: Capitalize Names
+Write a function that takes an array of names and returns a new array with each name capitalized.
+
+const names = ['john', 'jane', 'bob'];
+// Output: ['John', 'Jane', 'Bob'] -->
+
+    <!-- <script>
+        
+        function capitalizeNames(arr) {
+  // Use the map function to capitalize each name in the array
+  const capitalizedArray = arr.map(name => name.charAt(0).toUpperCase() + name.slice(1));
+  return capitalizedArray;
+}
+
+const names = ['john', 'jane', 'bob'];
+const capitalizedNames = capitalizeNames(names);
+
+console.log(capitalizedNames);
+    </script> -->
+   <!-- Task 3: Array of Object Properties 
+   Given an array of objects, create a new array containing a specific property from each object.
+
+const people = [ { name: 'John', age: 30 }, { name: 'Jane', age: 25 }, { name: 'Bob', age: 40 } ];
+// Output: ['John', 'Jane', 'Bob']
+// Output: [30, 25, 40] -->
+    <script>
+        function extractProperty(arr, propertyName) {
+  // Use the map function to extract the specified property from each object
+  const extractedArray = arr.map(item => item[propertyName]);
+  return extractedArray;
+}
+
+const people = [
+  { name: 'John', age: 30 },
+  { name: 'Jane', age: 25 },
+  { name: 'Bob', age: 40 }
+];
+
+const names = extractProperty(people, 'name');
+const ages = extractProperty(people, 'age');
+
+console.log(names);
+console.log(ages);  
+</script>
+
+</body>
+</html>
